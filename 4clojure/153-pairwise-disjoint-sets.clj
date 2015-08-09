@@ -1,2 +1,2 @@
-(= (reduce + (map count %)) (count (reduce clojure.set/union %)))
+#(= (reduce + (map count %)) (count (reduce clojure.set/union %)))
    
