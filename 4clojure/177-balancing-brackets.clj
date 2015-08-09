@@ -1,4 +1,4 @@
-(defn balanced? [str] (let [brackets (#(re-seq #"[\(\)\[\]{}]" %) str)
+(fn balanced? [str] (let [brackets (#(re-seq #"[\(\)\[\]{}]" %) str)
                             open-set #{"{" "[" "("}
                             lookup {"}" "{",")" "(", "]" "["}
                             ]
