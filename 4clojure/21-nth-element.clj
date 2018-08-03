@@ -1,0 +1,1 @@
+(fn [xs,n] (last (take (+ n  1) xs)))
