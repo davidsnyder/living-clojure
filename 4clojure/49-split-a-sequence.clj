@@ -1,0 +1,1 @@
+;#(into (vector (take % %2)) (vector (drop % %2)))

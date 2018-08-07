@@ -1,0 +1,1 @@
+#(drop-last (mapcat vector %2 (repeat %)))
