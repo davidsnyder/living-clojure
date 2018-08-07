@@ -1,0 +1,1 @@
+(fn [c] (apply str (map char (filter #(and (< %1 97) (> %1 64)) (map int c)))))

@@ -1,6 +1,6 @@
-(fn fib-seq [n] (let [fib (fn f [a b] (lazy-seq (cons a (f b (+ a b)))))]
-                    (take n (fib 1 1))))
-                    
-
+ (fn fib [n] (reverse ((fn [c n] 
+ 	(if (= n (count c)) c 
+ 						(recur (cons (apply + (take 2 c)) c) n))) 
+ 						'(1 1) n)))
         
 
